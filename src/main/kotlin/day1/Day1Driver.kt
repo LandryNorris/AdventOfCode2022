@@ -2,7 +2,7 @@ package day1
 
 import common.TextInputPuzzleDriver
 
-class Driver: TextInputPuzzleDriver<Int, Int>() {
+class Day1Driver: TextInputPuzzleDriver<Int, Int>() {
     private fun parse(input: String): List<Elf> {
         val calories = input
             .lines()
