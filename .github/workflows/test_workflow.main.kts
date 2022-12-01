@@ -13,6 +13,7 @@ val workflow = workflow(
     on = listOf(Push()),
     sourceFile = __FILE__.toPath(),
 ) {
+    __FILE__
     job(id = "test_job", runsOn = UbuntuLatest) {
         uses(name = "Check out", action = CheckoutV3())
         run(name = "test", command = "./gradlew test")
