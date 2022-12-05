@@ -59,6 +59,6 @@ class Day5 {
         stacks.moveBoxes(0, 1, 4)
 
         assertEquals(null, stacks[0].top?.name)
-        assertEquals('A', stacks[1].top?.name)
+        assertEquals('D', stacks[1].top?.name)
     }
 }
